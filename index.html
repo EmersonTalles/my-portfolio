@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-primary-container": "#004965",
+          "error-container": "#93000a",
+          "secondary-fixed-dim": "#bdc2ff",
+          "surface-container": "#191f31",
+          "outline-variant": "#3e484f",
+          "inverse-surface": "#dce1fb",
+          "surface-overlay": "#0F172A",
+          "primary-fixed-dim": "#7bd0ff",
+          "tertiary-fixed-dim": "#45dfa4",
+          "on-secondary-container": "#a8afff",
+          "primary": "#38bdf8",
+          "primary-bright": "#8ed5ff",
+          "surface-tint": "#7bd0ff",
+          "surface-bright": "#33394c",
+          "on-surface-variant": "#bdc8d1",
+          "tertiary": "#4ee6aa",
+          "surface-raised": "#0b1326",
+          "on-secondary-fixed": "#000767",
+          "on-tertiary-container": "#004e35",
+          "on-error": "#690005",
+          "surface-base": "#020617",
+          "surface-container-highest": "#2e3447",
+          "accent-cyan-glow": "rgba(56, 189, 248, 0.25)",
+          "text-secondary": "#94A3B8",
+          "border-prominent": "#334155",
+          "error": "#ffb4ab",
+          "inverse-on-surface": "#2a3043",
+          "on-secondary": "#131e8c",
+          "text-muted": "#64748B",
+          "secondary": "#7bd0ff",
+          "tertiary-fixed": "#68fcbf",
+          "on-surface": "#dce1fb",
+          "accent-cyan-subtle": "rgba(56, 189, 248, 0.12)",
+          "tertiary-container": "#22c990",
+          "on-tertiary": "#003825",
+          "on-primary": "#00354a",
+          "surface-variant": "#2e3447",
+          "secondary-container": "#2f3aa3",
+          "on-background": "#dce1fb",
+          "primary-container": "#0284c7",
+          "surface-container-lowest": "#070d1f",
+          "on-secondary-fixed-variant": "#2f3aa3",
+          "outline": "#87929a",
+          "background": "#0c1324",
+          "border-subtle": "#1E293B",
+          "surface": "#0c1324",
+          "on-tertiary-fixed": "#002114",
+          "on-tertiary-fixed-variant": "#005137",
+          "surface-dim": "#0c1324",
+          "primary-fixed": "#c4e7ff",
+          "on-error-container": "#ffdad6",
+          "surface-container-low": "#151b2d",
+          "secondary-fixed": "#e0e0ff",
+          "inverse-primary": "#00668a",
+          "on-primary-fixed-variant": "#004c69",
+          "surface-container-high": "#23293c",
+          "on-primary-fixed": "#001e2c",
+          "text-primary": "#F8FAFC"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "margin": "3rem",
+          "space-2xl": "4rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "1rem",
+          "margin-mobile": "1.25rem",
+          "space-md": "1rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem"
+        },
+        "fontFamily": {
+          "headline-sm": ["Roboto Flex"],
+          "display-hero-mobile": ["Roboto Flex"],
+          "label-meta": ["Space Mono"],
+          "headline-lg": ["Roboto Flex"],
+          "headline-lg-mobile": ["Roboto Flex"],
+          "label-code-sm": ["Space Mono"],
+          "headline-md": ["Roboto Flex"],
+          "label-code-lg": ["Space Mono"],
+          "body-md": ["Roboto Flex"],
+          "display-hero": ["Roboto Flex"],
+          "body-lg": ["Roboto Flex"],
+          "body-sm": ["Roboto Flex"],
+          "mono-kicker": ["Space Mono"],
+          "mono-badge": ["Space Mono"],
+          "button-text": ["Roboto Flex"],
+          "title-md": ["Roboto Flex"]
+        },
+        "fontSize": {
+          "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+          "display-hero-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "label-meta": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+          "headline-lg": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-lg-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "label-code-sm": ["11px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "400"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "label-code-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+          "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "display-hero": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "700"}],
+          "body-lg": ["17px", {"lineHeight": "28px", "fontWeight": "400"}],
+          "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}],
+          "mono-kicker": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "400"}],
+          "mono-badge": ["13px", {"lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "700"}],
+          "button-text": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "title-md": ["18px", {"lineHeight": "26px", "fontWeight": "600"}]
+        }
+      }
+    }
+  };
+</script><title>Emerson Almeida — Data Analyst</title><meta content="Emerson Almeida — Data Analyst especializado en Power BI, automatización de procesos e integración SAP." name="description"/><meta content="#020617" name="theme-color"/><link href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%23020617%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27%2338bdf8%27/%3E%3C/svg%3E" rel="icon"/><link href="site.css" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface antialiased"><a class="sx-skip" href="#main">Saltar al contenido</a>
+<header class="sx-header"><div class="sx-bar">
+<a class="sx-brand" href="index.html"><span class="sx-name"><span aria-hidden="true" class="sx-dot"></span>Emerson Almeida</span><span class="sx-role">Data Analyst · Especialista en Automatización y BI</span></a>
+<nav aria-label="Navegación principal" class="sx-nav"><a aria-current="page" href="index.html">Inicio</a><a href="perfil.html">Perfil y trayectoria</a><a href="Proyectos.html">Proyectos</a><a href="contacto.html">Contacto</a></nav>
+<div aria-label="Idioma" class="sx-lang" role="group"><button aria-label="Español" data-lang="es" lang="es" type="button">ES</button><button aria-label="Português" data-lang="pt" lang="pt" type="button">PT</button><button aria-label="English" data-lang="en" lang="en" type="button">EN</button></div>
+<button aria-controls="mobile-nav" aria-expanded="false" aria-label="Menú" class="sx-burger" id="menu-btn" type="button"><span aria-hidden="true" class="material-symbols-outlined">menu</span></button>
+<nav aria-label="Navegación principal" class="sx-mobile" hidden="" id="mobile-nav"><a aria-current="page" href="index.html">Inicio</a><a href="perfil.html">Perfil y trayectoria</a><a href="Proyectos.html">Proyectos</a><a href="contacto.html">Contacto</a></nav>
+</div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-240px)]" id="main" style="outline:0" tabindex="-1"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Field -->
+<div class="relative w-full max-w-[1200px] mx-auto px-margin-mobile md:px-margin py-space-xl md:py-space-2xl">
+<div class="absolute top-10 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-40 right-10 w-80 h-80 bg-primary-container/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- 1. HERO SECTION -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Intro & Headline -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-mono-kicker text-mono-kicker text-primary tracking-widest uppercase">DATA ANALYTICS / AUTOMATIZACIÓN &amp; BI</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-text-primary tracking-tight font-bold">
+            Emerson Almeida
+          </h1>
+<p class="font-headline-md text-headline-md text-primary font-semibold leading-snug">
+            Transformo datos operativos en indicadores claros y procesos automatizados.
+          </p>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+          Data Analyst enfocado en transformar datos operativos en indicadores claros y procesos automatizados. Combino ingeniería de producción, ciencia de datos y diseño de interfaces para entregar dashboards y automatizaciones que reducen el trabajo manual y aceleran la toma de decisiones en entornos industriales.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="px-space-lg py-space-sm bg-primary hover:bg-primary-bright text-surface-base font-button-text text-button-text font-bold rounded transition-all duration-200 shadow-md hover:shadow-cyan-500/20 flex items-center gap-space-xs group" href="#proyectos-seccion">
+<span class="">Ver proyectos</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[18px] group-hover:translate-y-0.5 transition-transform">arrow_downward</span>
+</a>
+<a class="px-space-lg py-space-sm bg-surface-container hover:bg-surface-container-high text-text-primary hover:text-primary font-button-text text-button-text rounded transition-all duration-200 flex items-center gap-space-xs border border-border-subtle" href="#contacto-banner">
+<span class="">Contacto</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+<!-- Meta Indicator -->
+<div class="flex flex-wrap items-center gap-x-space-sm gap-y-1 pt-space-sm text-text-muted font-mono-badge text-mono-badge">
+<span class="flex items-center gap-1 text-primary"><span aria-hidden="true" class="material-symbols-outlined text-[16px]">verified</span> +3 años como Data Analyst</span>
+<span class="text-outline">·</span>
+<span class="">+7 años de experiencia con datos</span>
+<span class="text-outline">·</span>
+<a class="text-on-surface hover:text-primary transition-colors underline underline-offset-4 decoration-outline-variant" href="mailto:emersontalles2@gmail.com">emersontalles2@gmail.com</a>
+</div>
+</div>
+<!-- Right Column: Visual Portrait & Status Card -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Retrato / Graphic Module with subtle tech frame -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-low border border-primary/20 shadow-2xl group ring-1 ring-primary/10">
+<div class="aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden relative">
+<img alt="Emerson Almeida, Data Analyst" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 object-top" decoding="async" height="987" loading="eager" src="img/Perfil_1_small.png" width="832"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Telemetry overlay badge -->
+<div class="absolute top-space-sm right-space-sm bg-surface-base/85 backdrop-blur-md px-space-sm py-1 rounded flex items-center gap-space-xs border border-primary/30">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-mono-kicker text-mono-kicker text-primary text-[11px] font-bold">ONLINE · BI &amp; AUTOMATION</span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md">
+<span class="font-mono-kicker text-mono-kicker text-primary uppercase font-bold tracking-wider">Perfil Profesional</span>
+<p class="font-title-md text-title-md text-text-primary font-semibold">Especialista en Automatización y BI</p>
+<p class="text-xs text-text-muted mt-0.5">Ingeniería de Producción &amp; Ciencia de Datos</p>
+</div>
+</div>
+</div>
+<!-- Availability Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-border-subtle shadow-md flex flex-col gap-space-xs hover:border-primary/40 transition-colors">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<span class="font-title-md text-title-md text-text-primary font-semibold flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary"></span> Disponible para proyectos</span>
+<span class="font-mono-badge text-mono-badge text-primary bg-surface-container-high px-space-xs py-0.5 rounded border border-border-subtle">+3 años Analyst / +7 años Datos</span>
+</div>
+<p class="font-body-md text-body-md text-text-muted">
+            Disponible para proyectos y consultoría en dashboards gerenciales, integraciones SAP/APIs, automatizaciones con Power Platform/VBA e ingeniería de datos industriales.
+          </p>
+</div>
+</div>
+</section>
+<!-- 2. SOBRE MÍ - DADOS QUE SE CONVERTEM EM DECISÕES -->
+<section class="mt-space-2xl pt-space-2xl bg-surface-container-lowest/70 border border-border-subtle -mx-margin-mobile md:-mx-margin px-margin-mobile md:px-margin py-space-2xl rounded-2xl" id="sobre-mim">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-mono-kicker text-mono-kicker text-primary uppercase tracking-wider">SOBRE MÍ</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight font-bold">
+              Datos que se convierten en decisiones
+            </h2>
+</div>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+            Mi enfoque une visión estratégica de ingeniería industrial con implementación técnica en datos. Me enfoco en eliminar fricciones manuales, crear visualizaciones claras de rendimiento y diseñar pipelines confiables para tomadores de decisiones.
+          </p>
+<div>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-primary font-button-text text-button-text rounded transition-colors group border border-border-subtle" href="https://www.linkedin.com/in/emersontalles/" rel="noopener noreferrer" target="_blank">
+<span class="">Ver perfil y trayectoria en LinkedIn</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-space-md bg-surface-container-low p-space-xl rounded-xl border border-border-subtle shadow-sm">
+<h3 class="font-title-md text-title-md text-text-primary font-semibold">
+            Áreas de Especialidad Operacional &amp; Industrial
+          </h3>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+            Desarrollo herramientas conectadas directamente a los sistemas troncales del negocio (SAP ERP, AVEVA PI, bases relacionales y hojas de cálculo colaborativas), garantizando datos auditables y actualizados:
+          </p>
+<!-- 4 Domain focus cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-md bg-surface-container-high rounded border border-border-subtle flex flex-col gap-1 hover:border-primary/30 transition-colors">
+<div class="flex items-center gap-2 text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-[20px]">local_shipping</span>
+<span class="font-title-md text-[16px] font-semibold text-text-primary">Logística</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Optimización de rutas e integración de distribución continua.</p>
+</div>
+<div class="p-space-md bg-surface-container-high rounded border border-border-subtle flex flex-col gap-1 hover:border-primary/30 transition-colors">
+<div class="flex items-center gap-2 text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-[20px]">account_balance</span>
+<span class="font-title-md text-[16px] font-semibold text-text-primary">Fixed Assets</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Activos inmovilizados, trazabilidad patrimonial y planificación de materiales.</p>
+</div>
+<div class="p-space-md bg-surface-container-high rounded border border-border-subtle flex flex-col gap-1 hover:border-primary/30 transition-colors">
+<div class="flex items-center gap-2 text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-[20px]">shopping_cart</span>
+<span class="font-title-md text-[16px] font-semibold text-text-primary">Compras</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Automatización de flujos de compra, homologación y reporting ejecutivo.</p>
+</div>
+<div class="p-space-md bg-surface-container-high rounded border border-border-subtle flex flex-col gap-1 hover:border-primary/30 transition-colors">
+<div class="flex items-center gap-2 text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+<span class="font-title-md text-[16px] font-semibold text-text-primary">Rendimiento Industrial</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">KPIs de producción en tiempo real, fiabilidad y métricas de MTBF.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. TRABAJO SELECCIONADO - CASOS ENTREGADOS -->
+<section class="mt-space-2xl flex flex-col gap-space-xl" id="proyectos-seccion">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-mono-kicker text-mono-kicker text-primary uppercase tracking-wider">PROYECTOS DESTACADOS</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight font-bold">
+            Casos entregados
+          </h2>
+<p class="font-body-md text-body-md text-text-muted">
+            Soluciones reales en producción que redujeron el esfuerzo manual y aportaron visibilidad operativa.
+          </p>
+</div>
+<a class="self-start md:self-auto inline-flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-low hover:bg-surface-container text-on-surface hover:text-primary font-button-text text-button-text transition-colors border border-border-subtle shadow-sm" href="https://emersonalmeidaportfolio.lovable.app" rel="noopener noreferrer" target="_blank">
+<span class="">Ver catálogo completo</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">east</span>
+</a>
+</div>
+<!-- Project Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- PROYECTO 01 -->
+<article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low border border-border-subtle shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 group">
+<div class="aspect-video w-full relative overflow-hidden bg-surface-container-lowest border-b border-border-subtle flex items-center justify-center p-space-md">
+<div class="w-full h-full rounded bg-surface-base/80 p-space-md flex flex-col justify-between border border-border-subtle relative overflow-hidden">
+<div class="flex items-center justify-between z-10">
+<span class="font-mono-badge text-mono-badge text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">PRJ_01 // GEO-SAP</span>
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-[20px]">alt_route</span>
+</div>
+<div class="z-10 flex flex-col gap-1">
+<span class="font-mono-kicker text-[11px] text-text-muted uppercase">Integración Logística</span>
+<span class="text-xs text-text-primary font-mono">ERP SAP ➔ Geocode API ➔ RoadNet</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/15 rounded-full blur-xl pointer-events-none"></div>
+</div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-primary transition-colors font-bold">
+                Automatización de la Base de Clientes
+              </h3>
+<p class="font-body-sm text-body-sm text-primary font-medium">
+                VBA · API Geocode · SAP · RoadNet · Excel Online
+              </p>
+<p class="font-body-md text-body-md text-text-muted">
+                Automatización de la base de clientes, obtención de coordenadas geográficas vía API, datos estructurados e importación directa al sistema de ruteo RoadNet integrado al ERP SAP.
+              </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Metric Badge Box -->
+<div class="p-space-sm bg-surface-container-lowest rounded flex items-start gap-space-xs border border-border-subtle">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-[18px] mt-0.5">bolt</span>
+<span class="font-mono-badge text-mono-badge text-on-surface">100% automatizado · Reducción expresiva de tiempo operativo y rutas optimizadas</span>
+</div>
+<!-- Actions toolbar -->
+<div class="flex items-center gap-space-md pt-space-xs font-button-text text-button-text">
+<a class="text-primary hover:text-primary-bright transition-colors flex items-center gap-0.5 font-semibold" href="https://emersonalmeidaportfolio.lovable.app" rel="noopener noreferrer" target="_blank">
+                  Ver caso <span aria-hidden="true" class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+<span class="text-text-muted">·</span>
+<span class="text-xs text-on-surface-variant font-mono">Logística &amp; Ruteo</span>
+</div>
+</div>
+</div>
+</article>
+<!-- PROYECTO 02 -->
+<article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low border border-border-subtle shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 group">
+<div class="aspect-video w-full relative overflow-hidden bg-surface-container-lowest border-b border-border-subtle flex items-center justify-center p-space-md">
+<div class="w-full h-full rounded bg-surface-base/80 p-space-md flex flex-col justify-between border border-border-subtle relative overflow-hidden">
+<div class="flex items-center justify-between z-10">
+<span class="font-mono-badge text-mono-badge text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">PRJ_02 // DAILY-REPORT</span>
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-[20px]">query_stats</span>
+</div>
+<div class="z-10 flex flex-col gap-1">
+<span class="font-mono-kicker text-[11px] text-text-muted uppercase">Telemetría Industrial</span>
+<span class="text-xs text-text-primary font-mono">AVEVA PI ➔ Power Automate ➔ Power BI</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/15 rounded-full blur-xl pointer-events-none"></div>
+</div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-primary transition-colors font-bold">
+                Dashboard de Producción de Hornos
+              </h3>
+<p class="font-body-sm text-body-sm text-primary font-medium">
+                Power BI · AVEVA PI System · HTML/CSS · Figma · Power Automate
+              </p>
+<p class="font-body-md text-body-md text-text-muted">
+                Daily Report industrial con indicadores de productividad, fiabilidad, horas trabajadas, MTBF y tasa de sustitución por combustibles alternativos.
+              </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Metric Badge Box -->
+<div class="p-space-sm bg-surface-container-lowest rounded flex items-start gap-space-xs border border-border-subtle">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-[18px] mt-0.5">sensors</span>
+<span class="font-mono-badge text-mono-badge text-on-surface">Monitorización continua · KPIs en tiempo real</span>
+</div>
+<!-- Actions toolbar -->
+<div class="flex items-center gap-space-md pt-space-xs font-button-text text-button-text">
+<a class="text-primary hover:text-primary-bright transition-colors flex items-center gap-0.5 font-semibold" href="https://emersonalmeidaportfolio.lovable.app" rel="noopener noreferrer" target="_blank">
+                  Ver caso <span aria-hidden="true" class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+<span class="text-text-muted">·</span>
+<span class="text-xs text-on-surface-variant font-mono">Industria Pesada</span>
+</div>
+</div>
+</div>
+</article>
+<!-- PROYECTO 03 -->
+<article class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low border border-border-subtle shadow-lg hover:shadow-2xl hover:border-primary/40 transition-all duration-300 group">
+<div class="aspect-video w-full relative overflow-hidden bg-surface-container-lowest border-b border-border-subtle flex items-center justify-center p-space-md">
+<div class="w-full h-full rounded bg-surface-base/80 p-space-md flex flex-col justify-between border border-border-subtle relative overflow-hidden">
+<div class="flex items-center justify-between z-10">
+<span class="font-mono-badge text-mono-badge text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">PRJ_03 // INVOICE-OCR</span>
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-[20px]">document_scanner</span>
+</div>
+<div class="z-10 flex flex-col gap-1">
+<span class="font-mono-kicker text-[11px] text-text-muted uppercase">Automatización Python</span>
+<span class="text-xs text-text-primary font-mono">Pdfplumber ➔ Pandas ➔ Flask Dashboard</span>
+</div>
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/15 rounded-full blur-xl pointer-events-none"></div>
+</div>
+</div>
+<div class="p-space-lg flex flex-col flex-1 justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-primary transition-colors font-bold">
+                Extractor de Datos de Facturas en PDF
+              </h3>
+<p class="font-body-sm text-body-sm text-primary font-medium">
+                Python · Flask · Pandas · Pdfplumber · Customtkinter
+              </p>
+<p class="font-body-md text-body-md text-text-muted">
+                Extracción y estructuración automática de datos de facturas de energía en PDF, con dashboard analítico, gestión de parámetros, budget y remuneración mFRR para auditoría.
+              </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Metric Badge Box -->
+<div class="p-space-sm bg-surface-container-lowest rounded flex items-start gap-space-xs border border-border-subtle">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-[18px] mt-0.5">auto_mode</span>
+<span class="font-mono-badge text-mono-badge text-on-surface">Procesamiento automatizado de facturas por lotes</span>
+</div>
+<!-- Actions toolbar -->
+<div class="flex items-center gap-space-md pt-space-xs font-button-text text-button-text">
+<a class="text-primary hover:text-primary-bright transition-colors flex items-center gap-0.5 font-semibold" href="https://emersonalmeidaportfolio.lovable.app" rel="noopener noreferrer" target="_blank">
+                  Ver caso <span aria-hidden="true" class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+<span class="text-text-muted">·</span>
+<span class="text-xs text-on-surface-variant font-mono">Energía &amp; Finanzas</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 4. COMPETÊNCIAS & STACK -->
+<section class="mt-space-2xl pt-space-xl flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs">
+<span class="font-mono-kicker text-mono-kicker text-primary uppercase tracking-wider">COMPETENCIAS &amp; STACK</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight font-bold">
+          Tecnologías y Herramientas Especializadas
+        </h2>
+<p class="font-body-md text-body-md text-text-muted">
+          Conjunto de herramientas aplicadas en análisis avanzado, automatización industrial e interfaces intuitivas.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Competência 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container border border-border-subtle hover:border-primary/40 transition-all duration-200 shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high border border-border-subtle flex items-center justify-center text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-[24px]">insights</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">
+              Data Analytics
+            </h3>
+<p class="font-body-md text-body-md text-text-muted">
+              Modelado dimensional, DAX avanzado, consultas analíticas y telemetría industrial en tiempo real.
+            </p>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1 font-mono-badge text-[11px] text-primary">
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">Power BI</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">Power Query</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">SQL</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">Python</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">Excel Avanzado</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">AVEVA PI System</span>
+</div>
+</div>
+<!-- Competência 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container border border-border-subtle hover:border-primary/40 transition-all duration-200 shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high border border-border-subtle flex items-center justify-center text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-[24px]">smart_toy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">
+              Automatización &amp; Low-Code
+            </h3>
+<p class="font-body-md text-body-md text-text-muted">
+              Creación de flujos automatizados sin fricciones, apps corporativas para planta y scripts dedicados.
+            </p>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1 font-mono-badge text-[11px] text-primary">
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">Power Automate</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">Power Apps</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">VBA Macros</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">Pipelines de datos</span>
+</div>
+</div>
+<!-- Competência 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container border border-border-subtle hover:border-primary/40 transition-all duration-200 shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high border border-border-subtle flex items-center justify-center text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-[24px]">apartment</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">
+              Sistemas de Negocio
+            </h3>
+<p class="font-body-md text-body-md text-text-muted">
+              Mapeo de tablas ERP, extracción segura de datos transaccionales e integración con CRM corporativos.
+            </p>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1 font-mono-badge text-[11px] text-primary">
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">SAP ERP</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">Salesforce</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">Office 365</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">SharePoint</span>
+</div>
+</div>
+<!-- Competência 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container border border-border-subtle hover:border-primary/40 transition-all duration-200 shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high border border-border-subtle flex items-center justify-center text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-[24px]">devices</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">
+              Web &amp; UX
+            </h3>
+<p class="font-body-md text-body-md text-text-muted">
+              Interfaces centradas en el usuario, prototipado visual para paneles de control y soporte de IA generativa.
+            </p>
+</div>
+<div class="pt-space-xs flex flex-wrap gap-1 font-mono-badge text-[11px] text-primary">
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">Figma</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">HTML/CSS</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">C++</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded border border-border-subtle">ChatGPT / Claude</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. FORMACIÓN ACADÉMICA -->
+<section class="mt-space-2xl pt-space-xl flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs">
+<span class="font-mono-kicker text-mono-kicker text-primary uppercase tracking-wider">FORMACIÓN ACADÉMICA</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight font-bold">
+          Base Técnica &amp; Científica
+        </h2>
+<p class="font-body-md text-body-md text-text-muted">
+          La base sólida entre ingeniería, ciencia de datos y usabilidad que respalda cada solución técnica.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Formação 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-border-subtle flex flex-col justify-between gap-space-md hover:bg-surface-container transition-colors shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-mono-kicker text-mono-kicker text-primary uppercase">Especialización · Completada</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">
+              Posgrado en Ciencia de Datos
+            </h3>
+</div>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+            Especialización orientada a estadística aplicada, machine learning, análisis predictivo y manipulación de grandes bases de datos con Python y SQL.
+          </p>
+<div class="flex items-center gap-space-xs font-mono-badge text-mono-badge text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">school</span>
+<span class="">Posgrado / Especialización</span>
+</div>
+</div>
+<!-- Formação 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-border-subtle flex flex-col justify-between gap-space-md hover:bg-surface-container transition-colors shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-mono-kicker text-mono-kicker text-primary uppercase">Grado · Completado</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">
+              Grado en Ingeniería de Producción
+            </h3>
+</div>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+            Sólida formación en optimización de procesos, cadena de suministro, planificación de operaciones, control de calidad y costos industriales.
+          </p>
+<div class="flex items-center gap-space-xs font-mono-badge text-mono-badge text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">engineering</span>
+<span class="">Enseñanza Superior Completa</span>
+</div>
+</div>
+<!-- Formação 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-border-subtle flex flex-col justify-between gap-space-md hover:bg-surface-container transition-colors shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-mono-kicker text-mono-kicker text-primary uppercase">En curso · 2024</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">
+              Máster en Desarr. Web &amp; UX/UI
+            </h3>
+</div>
+<p class="font-body-md text-body-md text-text-muted leading-relaxed">
+            Profundización en experiencia de usuario, diseño de interfaces, arquitectura front-end y creación de paneles orientados a la facilidad de uso diario.
+          </p>
+<div class="flex items-center gap-space-xs font-mono-badge text-mono-badge text-primary">
+<span aria-hidden="true" class="material-symbols-outlined text-[16px]">palette</span>
+<span class="">Máster Profesional</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. BANNER / BOTTOM CTA -->
+<section class="mt-space-2xl pt-space-xl pb-space-lg" id="contacto-banner">
+<div class="p-space-xl md:p-space-2xl rounded-2xl bg-gradient-to-r from-surface-container-low via-surface-container to-surface-container-low border border-border-subtle shadow-2xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-xl relative overflow-hidden">
+<!-- Accent Glow background orb -->
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-primary/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm max-w-2xl relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-text-primary tracking-tight font-bold">
+            ¿Hablemos de datos y automatización?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Disponible para proyectos de BI, automatización de procesos y análisis de datos. Listo para aportar valor a su operación.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-[18px]">mail</span>
+<a class="font-mono-badge text-mono-badge text-primary hover:underline underline-offset-4" href="mailto:emersontalles2@gmail.com">emersontalles2@gmail.com</a>
+</div>
+<span class="text-outline">·</span>
+<div class="flex items-center gap-space-xs">
+<span aria-hidden="true" class="material-symbols-outlined text-primary text-[18px]">link</span>
+<a class="font-mono-badge text-mono-badge text-on-surface hover:text-primary hover:underline underline-offset-4" href="https://www.linkedin.com/in/emersontalles/" rel="noopener noreferrer" target="_blank">linkedin.com/in/emersontalles</a>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex flex-wrap gap-space-sm">
+<a class="px-space-xl py-space-md bg-primary hover:bg-primary-bright text-surface-base font-button-text text-button-text font-bold rounded transition-all duration-200 shadow-lg hover:shadow-cyan-500/25 inline-flex items-center gap-space-xs" href="contacto.html">
+<span class="">Enviar mensaje</span>
+<span aria-hidden="true" class="material-symbols-outlined text-[18px]">send</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive smooth scroll script -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId !== '#') {
+          const targetEl = document.querySelector(targetId);
+          if (targetEl) {
+            e.preventDefault();
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  </script>
+</div></main>
+<footer class="sx-footer"><div class="sx-foot">
+<div><span class="sx-name" style="color:#f8fafc;font-weight:700">Emerson Almeida</span><p style="margin-top:.5rem">Data Analyst &amp; Especialista en Automatización y BI. Transformando datos operativos en valor de negocio medible.</p>
+<small>© <span data-year="">2026</span> Emerson Almeida. <span>Todos los derechos reservados.</span></small></div>
+<div><h2>Navegación</h2><a aria-current="page" href="index.html">Inicio</a><a href="perfil.html">Perfil y trayectoria</a><a href="Proyectos.html">Proyectos</a><a href="contacto.html">Contacto</a></div>
+<div><h2>Contacto y red</h2><a href="mailto:emersontalles2@gmail.com">emersontalles2@gmail.com</a><a href="https://www.linkedin.com/in/emersontalles/" rel="noopener noreferrer" target="_blank">Perfil de LinkedIn</a><a style="color:#34d399">Estado: disponible para proyectos y consultoría</a></div>
+</div></footer><script defer="" src="site.js"></script></body></html>
