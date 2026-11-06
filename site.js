@@ -107,7 +107,7 @@ const D={
 "Grado en Ingeniería de Producción":["Graduação em Engenharia de Produção", "Degree in Production Engineering"],
 "Sólida formación en optimización de procesos, cadena de suministro, planificación de operaciones, control de calidad y costos industriales.":["Sólida formação em otimização de processos, cadeia de suprimentos, planejamento de operações, controle de qualidade e custos industriais.", "Solid training in process optimisation, supply chain, operations planning, quality control and industrial costs."],
 "Enseñanza Superior Completa":["Ensino superior completo", "Completed higher education"],
-"En curso · 2024":["Em andamento · 2024", "In progress · 2024"],
+"EN CURSO · 2026 - ABR/2027":["EM ANDAMENTO · 2026 - ABR/2027", "IN PROGRESS · 2026 - APR/2027"],
 "Máster en Desarr. Web & UX/UI":["Mestrado em Desenv. Web e UX/UI", "Master’s in Web Dev. & UX/UI"],
 "Profundización en experiencia de usuario, diseño de interfaces, arquitectura front-end y creación de paneles orientados a la facilidad de uso diario.":["Aprofundamento em experiência do usuário, design de interfaces, arquitetura front-end e criação de painéis orientados à facilidade de uso diário.", "In-depth study of user experience, interface design, front-end architecture and dashboards built for everyday ease of use."],
 "Máster Profesional":["Mestrado profissional", "Professional Master’s"],
