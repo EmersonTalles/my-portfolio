@@ -180,6 +180,8 @@ const D={
 "Paletización virtual con Real Picking y seguimiento de vehículos con Greenmile.":["Paletização virtual com Real Picking e acompanhamento de veículos com Greenmile.", "Virtual palletisation with Real Picking and vehicle tracking with Greenmile."],
 "Responsable de la planificación de rutas de 6 centros de la empresa.":["Responsável pelo planejamento de rotas de 6 centros da empresa.", "Responsible for route planning across 6 company hubs."],
 "POSGRADO · LATO SENSU":["PÓS-GRADUAÇÃO · LATO SENSU", "POSTGRADUATE · LATO SENSU"],
+"España":["Espanha", "Spain"],
+"Brasil":["Brasil", "Brazil"],
 "Ciencia de Datos":["Ciência de Dados", "Data Science"],
 "Especialización Avanzada":["Especialização avançada", "Advanced specialisation"],
 "Enfoque Práctico":["Foco prático", "Practical focus"],

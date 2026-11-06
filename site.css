@@ -30,6 +30,9 @@ body{font-family:'Roboto Flex',system-ui,sans-serif}
 .sx-foot a[aria-current=page]{color:var(--cy)}
 .sx-foot h2{font:700 12px 'Space Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#64748b;margin:0 0 .75rem}
 .sx-foot a{display:block;color:var(--mut);font-size:13px;padding:.2rem 0;text-decoration:none}.sx-foot a:hover{color:var(--cy)}
+.sx-foot a.sx-social-link{display:inline-flex;align-items:center;gap:.5rem}
+.sx-social-link svg{width:1rem;height:1rem;flex:none;color:#0a66c2}
+.sx-social-link:hover svg{color:var(--cy)}
 .sx-foot p,.sx-foot small{font-size:13px;color:var(--mut);max-width:24rem}.sx-foot small{font:400 12px 'Space Mono',monospace;color:#64748b;display:block;margin-top:1rem}
 .sx-chip{font:400 12px 'Space Mono',monospace;letter-spacing:.04em;padding:.45rem .9rem;min-height:36px;border:1px solid var(--line);border-radius:.375rem;background:var(--raised);color:var(--mut);cursor:pointer;transition:all .2s}
 .sx-chip:hover{color:var(--txt);border-color:#334155}.sx-chip[aria-pressed=true]{border-color:var(--cy);background:rgba(56,189,248,.12);color:var(--cy)}
