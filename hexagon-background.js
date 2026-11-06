@@ -16,6 +16,8 @@
   let lightY=0;
   let targetX=0;
   let targetY=0;
+  let pointerX=0;
+  let pointerY=0;
   let hasPointer=false;
 
   function hexagon(x,y,radius){
@@ -101,41 +103,54 @@
   }
 
   function resize(){
-    const bounds=canvas.getBoundingClientRect();
-    width=bounds.width;
-    height=bounds.height;
-    const ratio=Math.min(window.devicePixelRatio||1,2);
+    width=document.documentElement.clientWidth;
+    height=Math.max(parent.scrollHeight,document.documentElement.scrollHeight,window.innerHeight);
+    canvas.style.width=`${width}px`;
+    canvas.style.height=`${height}px`;
+    const ratio=Math.min(window.devicePixelRatio||1,1);
     canvas.width=Math.round(width*ratio);
     canvas.height=Math.round(height*ratio);
     context.setTransform(ratio,0,0,ratio,0,0);
 
     if(!hasPointer){
-      targetX=lightX=width*.78;
-      targetY=lightY=height*.22;
+      targetX=width*.78;
+      targetY=window.scrollY+window.innerHeight*.22;
+      if(lightX===0&&lightY===0){
+        lightX=targetX;
+        lightY=targetY;
+      }
     }
     scheduleDraw();
   }
 
   function onPointerMove(event){
-    const bounds=canvas.getBoundingClientRect();
     hasPointer=true;
-    targetX=event.clientX-bounds.left;
-    targetY=event.clientY-bounds.top;
+    pointerX=event.clientX;
+    pointerY=event.clientY;
+    targetX=pointerX;
+    targetY=pointerY+window.scrollY;
+    scheduleDraw();
+  }
+
+  function onScroll(){
+    targetX=hasPointer?pointerX:width*.78;
+    targetY=hasPointer?pointerY+window.scrollY:window.scrollY+window.innerHeight*.22;
     scheduleDraw();
   }
 
   function onPointerLeave(){
     hasPointer=false;
     targetX=width*.78;
-    targetY=height*.22;
+    targetY=window.scrollY+window.innerHeight*.22;
     scheduleDraw();
   }
 
   const resizeObserver=new ResizeObserver(resize);
-  resizeObserver.observe(canvas);
+  resizeObserver.observe(parent);
   parent.addEventListener('pointermove',onPointerMove,{passive:true});
   parent.addEventListener('pointerleave',onPointerLeave);
   window.addEventListener('resize',resize,{passive:true});
+  window.addEventListener('scroll',onScroll,{passive:true});
   reducedMotion.addEventListener('change',scheduleDraw);
   resize();
 })();
