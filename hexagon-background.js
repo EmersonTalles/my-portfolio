@@ -58,7 +58,7 @@
     for(let column=-3;column<width/(radius*1.5)+2;column++){
       for(let row=-2;row<height/rowHeight+2;row++){
         const y=row*rowHeight+(column%2?rowHeight/2:0);
-        const x=column*radius*1.5+y*.12;
+        const x=column*radius*1.5;
         const distance=Math.hypot(x-lightX,y-lightY);
         const influence=Math.max(0,1-distance/lightRadius)**1.6;
         const lift=reducedMotion.matches?0:influence*7;
