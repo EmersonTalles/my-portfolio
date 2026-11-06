@@ -32,9 +32,9 @@ const D={
 "Total indexado":["Total indexado","Total indexed"],"proyectos entregados":["projetos entregues","projects delivered"],
 "Todos":["Todos","All"],"Automatización & Procesos":["Automação e processos","Automation & Processes"],"Dashboards & BI":["Dashboards e BI","Dashboards & BI"],"Python & Scripts":["Python e scripts","Python & Scripts"],"Integración SAP":["Integração SAP","SAP Integration"],
 "Buscar proyecto o herramienta…":["Buscar projeto ou ferramenta…","Search project or tool…"],"Buscar proyectos":["Buscar projetos","Search projects"],
-"Mostrando":["Exibindo","Showing"],"proyectos":["projetos","projects"],"Ver detalles":["Ver detalhes","View details"],"Solución:":["Solução:","Solution:"],"Métrica / Impacto":["Métrica / Impacto","Metric / Impact"],
+"Mostrando":["Exibindo","Showing"],"Ver detalles":["Ver detalhes","View details"],"Solución:":["Solução:","Solution:"],"Métrica / Impacto":["Métrica / Impacto","Metric / Impact"],
 "Sin proyectos en esta categoría":["Nenhum projeto nesta categoria","No projects in this category"],"Prueba con otro filtro o borra la búsqueda.":["Tente outro filtro ou limpe a busca.","Try another filter or clear the search."],"Limpiar filtros":["Limpar filtros","Clear filters"],
-"Hablar sobre este proyecto":["Falar sobre este projeto","Talk about this project"],"Cerrar":["Fechar","Close"],
+"Hablar sobre este proyecto":["Falar sobre este projeto","Talk about this project"],"Cerrar":["Fechar","Close"],"Imagen":["Imagem","Image"],
 "Automatización de la Base de Clientes":["Automação da base de clientes","Customer Database Automation"],"Dashboard de Producción de Hornos":["Dashboard de produção de fornos","Kiln Production Dashboard"],
 "Extractor de Datos de Facturas en PDF":["Extrator de dados de faturas em PDF","PDF Invoice Data Extractor"],"Evaluación para Certificación Operacional (PEOC)":["Avaliação para certificação operacional (PEOC)","Operational Certification Assessment (PEOC)"],
 "Reporte de Waste Heat Recovery (WHR)":["Relatório de Waste Heat Recovery (WHR)","Waste Heat Recovery (WHR) Report"],"Automatización de Reportes por Correo":["Automação de relatórios por e-mail","Email Report Automation"],
@@ -50,7 +50,7 @@ const D={
 "Disponible para consultoría, desarrollo de dashboards en BI, automatización de procesos operativos e integración de datos corporativos.":["Disponível para consultoria, desenvolvimento de dashboards de BI, automação de processos operacionais e integração de dados corporativos.","Available for consulting, BI dashboard development, operational process automation and corporate data integration."],
 "VALOR INMEDIATO":["VALOR IMEDIATO","IMMEDIATE VALUE"],"Dónde puedo aportar valor inmediato":["Onde posso gerar valor imediato","Where I can add value right away"],
 "CONEXIÓN DIRECTA":["CONEXÃO DIRETA","DIRECT CONNECTION"],"Canales de contacto":["Canais de contato","Contact channels"],"CORREO PRINCIPAL":["E-MAIL PRINCIPAL","MAIN EMAIL"],"Respuesta en hasta 24 horas laborables":["Resposta em até 24 horas úteis","Reply within 24 business hours"],
-"PERFIL DE LINKEDIN":["PERFIL NO LINKEDIN","LINKEDIN PROFILE"],"ESTADO: DISPONIBLE":["STATUS: DISPONÍVEL","STATUS: AVAILABLE"],"MODELO: REMOTO / HÍBRIDO":["MODELO: REMOTO / HÍBRIDO","MODE: REMOTE / HYBRID"],
+"PERFIL DE LINKEDIN":["PERFIL NO LINKEDIN","LINKEDIN PROFILE"],"ESTADO: DISPONIBLE":["STATUS: DISPONÍVEL","STATUS: AVAILABLE"],"MODELO: REMOTO / HÍBRIDO / PRESENCIAL":["MODELO: REMOTO / HÍBRIDO / PRESENCIAL","MODE: REMOTE / HYBRID / ON-SITE"],
 "Envía un mensaje":["Envie uma mensagem","Send a message"],"Se abre tu correo":["Abre o seu e-mail","Opens your email app"],
 "Completa los detalles de tu proyecto o demanda para iniciar nuestro alineamiento técnico.":["Preencha os detalhes do seu projeto para iniciarmos o alinhamento técnico.","Fill in your project details to start our technical alignment."],
 "NOMBRE COMPLETO *":["NOME COMPLETO *","FULL NAME *"],"CORREO CORPORATIVO *":["E-MAIL CORPORATIVO *","WORK EMAIL *"],"TIPO DE PROYECTO / DEMANDA *":["TIPO DE PROJETO / DEMANDA *","PROJECT TYPE / REQUEST *"],"MENSAJE / DETALLES *":["MENSAGEM / DETALHES *","MESSAGE / DETAILS *"],
@@ -61,7 +61,8 @@ const D={
 "Abriendo tu cliente de correo con el mensaje listo. Si no se abre, escribe a":["Abrindo seu cliente de e-mail com a mensagem pronta. Se não abrir, escreva para","Opening your email app with the message ready. If it doesn’t open, write to"],
 "Me interesa el proyecto":["Tenho interesse no projeto","I’m interested in the project"],
 "Conoce mis proyectos y trayectoria":["Conheça meus projetos e trajetória","Explore my projects and career"],"Ver trayectoria":["Ver trajetória","View career"],
-"Emerson Almeida — Perfil y trayectoria":["Emerson Almeida — Perfil e trajetória","Emerson Almeida — Profile & career"],"Emerson Almeida — Proyectos":["Emerson Almeida — Projetos","Emerson Almeida — Projects"],"Emerson Almeida — Contacto":["Emerson Almeida — Contato","Emerson Almeida — Contact"],"Emerson Almeida — Data Analyst":["Emerson Almeida — Data Analyst","Emerson Almeida — Data Analyst"]
+"Emerson Talles — Data Analyst especializado en Power BI, automatización de procesos e integración SAP.":["Emerson Talles — Data Analyst especializado em Power BI, automação de processos e integração SAP.","Emerson Talles — Data Analyst specialising in Power BI, process automation and SAP integration."],
+"Emerson Talles — Perfil y trayectoria":["Emerson Talles — Perfil e trajetória","Emerson Talles — Profile & career"],"Emerson Talles — Proyectos":["Emerson Talles — Projetos","Emerson Talles — Projects"],"Emerson Talles — Contacto":["Emerson Talles — Contato","Emerson Talles — Contact"],"Emerson Talles — Data Analyst":["Emerson Talles — Data Analyst","Emerson Talles — Data Analyst"]
 ,
 "+3 años Analyst / +7 años Datos":["+3 anos Analyst / +7 anos Dados", "3+ yrs Analyst / 7+ yrs Data"],
 "Mi enfoque une visión estratégica de ingeniería industrial con implementación técnica en datos. Me enfoco en eliminar fricciones manuales, crear visualizaciones claras de rendimiento y diseñar pipelines confiables para tomadores de decisiones.":["Minha abordagem une visão estratégica de engenharia industrial com implementação técnica em dados. Foco em eliminar atritos manuais, criar visualizações claras de desempenho e projetar pipelines confiáveis para quem toma decisões.", "My approach combines the strategic view of industrial engineering with technical implementation in data. I focus on removing manual friction, building clear performance visualisations and designing reliable pipelines for decision makers."],
@@ -199,7 +200,7 @@ const D={
 "Lean Six Sigma & Optimización":["Lean Six Sigma e otimização", "Lean Six Sigma & Optimisation"],
 "Confiabilidad y PCP":["Confiabilidade e PCP", "Reliability & PCP"],
 "Disponible para oportunidades profesionales y proyectos de consultoría técnica en inteligencia de datos y optimización operativa.":["Disponível para oportunidades profissionais e projetos de consultoria técnica em inteligência de dados e otimização operacional.", "Available for professional opportunities and technical consulting projects in data intelligence and operational optimisation."],
-"Emerson Almeida analizando un dashboard en una tableta":["Emerson Almeida analisando um dashboard em um tablet", "Emerson Almeida reviewing a dashboard on a tablet"],
+"Emerson Talles analizando un dashboard en una tableta":["Emerson Talles analisando um dashboard em um tablet", "Emerson Talles reviewing a dashboard on a tablet"],
 "#01 · LOGÍSTICA & ERP":["#01 · LOGÍSTICA E ERP", "#01 · LOGISTICS & ERP"],
 "Obtención de coordenadas geográficas vía API, layout estructurado e importación directa al sistema de ruteo RoadNet integrado al ERP SAP.":["Obtenção de coordenadas geográficas via API, layout estruturado e importação direta no sistema de roteirização RoadNet integrado ao ERP SAP.", "Geographic coordinates via API, structured layout and direct import into the RoadNet routing system integrated with SAP ERP."],
 "100% automatizado · Reducción significativa de tiempo operativo y rutas optimizadas.":["100% automatizado · Redução significativa de tempo operacional e rotas otimizadas.", "100% automated · Significant reduction in operating time and optimised routes."],
@@ -252,6 +253,7 @@ function apply(){
   const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;
   while((n=w.nextNode())){
     if(/^(SCRIPT|STYLE|TEXTAREA)$/.test(n.parentNode.nodeName))continue;
+    if(n.parentElement.closest('[data-k],[data-i18n-status]'))continue;
     if(n.__es===undefined){if(!n.nodeValue.trim())continue;n.__es=n.nodeValue}
     const es=n.__es,e=K[norm(es)];
     if(lang==='es'||!e){n.nodeValue=es;if(lang!=='es'&&es.trim().length>25)missing.add(es.trim());continue}
@@ -264,6 +266,14 @@ function apply(){
     const es=el.getAttribute(d);el.setAttribute(a,t(es))});
   if(document.__esTitle===undefined)document.__esTitle=document.title;
   document.title=t(document.__esTitle);
+  $$('meta[name="description"]').forEach(el=>{
+    if(!el.hasAttribute('data-es-content'))el.setAttribute('data-es-content',el.content);
+    el.content=t(el.getAttribute('data-es-content'));
+  });
+  $$('[data-k]').forEach(el=>{el.textContent=t(el.dataset.k)});
+  $$('[data-i18n-status]').forEach(el=>{
+    el.textContent=`${t(el.dataset.i18nStatus)} ${el.dataset.i18nEmail}`;
+  });
   $$('.sx-lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===lang));
   $$('[data-year]').forEach(e=>e.textContent=new Date().getFullYear());
   filters&&filters.render();
@@ -283,10 +293,36 @@ if(mb&&mn){
 }
 
 /* Filtros + búsqueda de proyectos */
+const projectImages=[
+  ['img/projects/client-base-flow.png'],
+  ['img/projects/kiln-daily-report.png'],
+  ['img/projects/invoice-desktop-1.png','img/projects/invoice-desktop-2.png','img/projects/invoice-web-1.png','img/projects/invoice-web-2.png'],
+  ['img/projects/peoc-flow.png','img/projects/peoc-screenshots.png'],
+  ['img/projects/whr-report.png'],
+  ['img/projects/email-report.png'],
+  ['img/projects/fixed-assets-dashboard.png','img/projects/fixed-assets-sap.png']
+];
+function openProjectDialog({title,category,tech,description,metricLabel,metric,images}){
+  $('#case-dialog')?.remove();
+  const d=document.createElement('dialog');d.id='case-dialog';d.className='sx-dialog';d.setAttribute('aria-labelledby','case-title');
+  const mk=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;x.textContent=txt;return x};
+  const gallery=document.createElement('div');gallery.className='sx-dialog-gallery';
+  images.forEach((src,index)=>{const image=document.createElement('img');image.src=src;image.alt=`${title} — ${t('Imagen')} ${index+1}`;image.loading=index?'lazy':'eager';gallery.append(image)});
+  const body=document.createElement('div');body.className='sx-dlg-body';
+  body.append(mk('span','sx-mono',category),mk('h2','',title),mk('span','sx-mono',tech),mk('p','',description));
+  body.querySelector('h2').id='case-title';
+  const metricCard=document.createElement('div');metricCard.className='sx-metric';metricCard.append(mk('span','sx-mono',metricLabel),mk('p','',metric));body.append(metricCard);
+  const row=document.createElement('div');row.style.cssText='display:flex;justify-content:flex-end';
+  const close=mk('button','sx-btn',t('Cerrar'));close.type='button';close.onclick=()=>d.close();row.append(close);body.append(row);
+  d.append(gallery,body);
+  d.addEventListener('click',ev=>{if(ev.target===d)d.close()});d.addEventListener('close',()=>d.remove());
+  document.body.append(d);d.showModal();
+}
 let filters=null;
 const grid=$('#projects-grid');
 if(grid){
   const cards=$$('.project-card',grid),btns=$$('.filter-btn'),inp=$('#project-search'),empty=$('#no-projects-view');
+  cards.forEach((card,index)=>{const image=$('img',card);if(image&&projectImages[index]?.[0])image.src=projectImages[index][0]});
   const st={f:'all',q:''};
   try{const f=new URLSearchParams(location.search).get('f');if(btns.some(b=>b.dataset.filter===f))st.f=f}catch(e){}
   const inCat=(c,f)=>f==='all'||c.dataset.cat.split(' ').includes(f);
@@ -295,7 +331,7 @@ if(grid){
     cards.forEach(c=>{const ok=inCat(c,st.f)&&(!q||c.textContent.toLowerCase().includes(q));c.style.display=ok?'':'none';n+=ok});
     btns.forEach(b=>{b.setAttribute('aria-pressed',b.dataset.filter===st.f);$('[data-count]',b).textContent=cards.filter(c=>inCat(c,b.dataset.filter)).length});
     const pc=$('#project-count');if(pc)pc.textContent=n;
-    const s=$('#filter-status-text');if(s)s.textContent=`${t('Mostrando')} ${n}/${cards.length} ${t('proyectos').toLowerCase()}`+(q?` · “${st.q.trim()}”`:'');
+    const s=$('#filter-status-text');if(s)s.textContent=`${t('Mostrando')} ${n}/${cards.length} ${t('Proyectos').toLowerCase()}`+(q?` · “${st.q.trim()}”`:'');
     if(empty){empty.classList.toggle('hidden',n>0);empty.classList.toggle('flex',n===0)}
   };
   filters={render};
@@ -306,23 +342,16 @@ if(grid){
   /* Detalle de proyecto */
   grid.addEventListener('click',e=>{
     const b=e.target.closest('[data-open-case]');if(!b)return;
-    const c=b.closest('.project-card'),title=$('h2',c).textContent.trim();
-    let d=$('#case-dialog');d?.remove();
-    d=document.createElement('dialog');d.id='case-dialog';d.className='sx-dialog';d.setAttribute('aria-labelledby','case-title');
-    const img=$('img',c),mk=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;x.textContent=txt;return x};
-    const body=document.createElement('div');body.className='sx-dlg-body';
-    const sol=$('p.text-text-secondary',c),met=$('.bg-surface-container-lowest',c);
-    body.append(mk('span','sx-mono',$('.absolute.top-space-sm',c).textContent.trim()),mk('h2','',title),mk('span','sx-mono',$('.p-space-lg span',c).textContent.trim()),mk('p','',sol.textContent.trim()));
-    body.firstChild.nextSibling.id='case-title';
-    const m=document.createElement('div');m.className='sx-metric';m.append(mk('span','sx-mono',$('span',met).textContent.trim()),mk('p','',$('p',met).textContent.trim()));body.append(m);
-    const row=document.createElement('div');row.style.cssText='display:flex;gap:.75rem;flex-wrap:wrap';
-    const a=mk('a','sx-btn p',t('Hablar sobre este proyecto'));a.href='contacto.html?project='+encodeURIComponent(title)+(lang!=='es'?'&lang='+lang:'');
-    const x=mk('button','sx-btn',t('Cerrar'));x.type='button';x.onclick=()=>d.close();row.append(a,x);body.append(row);
-    const im=img.cloneNode();im.removeAttribute('class');im.alt='';d.append(im,body);
-    d.addEventListener('click',ev=>{if(ev.target===d)d.close()});d.addEventListener('close',()=>d.remove());
-    document.body.append(d);d.showModal();
+    const c=b.closest('.project-card'),title=$('h2',c).textContent.trim(),metricText=$('.bg-surface-container-lowest p',c);
+    openProjectDialog({title,category:$('.absolute.top-space-sm',c).textContent.trim(),tech:$('.p-space-lg span',c).textContent.trim(),description:$('p.text-text-secondary',c).textContent.trim(),metricLabel:$('span',metricText.parentElement).textContent.trim(),metric:metricText.textContent.trim(),images:projectImages[cards.indexOf(c)]||[]});
   });
 }
+const featuredProjects=$('#proyectos-seccion');
+featuredProjects?.addEventListener('click',e=>{
+  const button=e.target.closest('[data-open-featured-case]');if(!button)return;
+  const card=button.closest('article'),title=$('h3',card).textContent.trim(),metric=$('.font-mono-badge.text-on-surface',card);
+  openProjectDialog({title,category:$('.font-mono-kicker.text-text-muted',card).textContent.trim(),tech:$('p.text-primary',card).textContent.trim(),description:$('p.text-text-muted',card).textContent.trim(),metricLabel:t('Métrica / Impacto'),metric:metric.textContent.trim(),images:projectImages[Number(button.dataset.openFeaturedCase)]||[]});
+});
 
 /* Formulario de contacto */
 const form=$('#contact-form');
@@ -340,13 +369,16 @@ if(form){
   const pj=new URLSearchParams(location.search).get('project');
   if(pj){f.m.value=`${t('Me interesa el proyecto')}: ${pj}.\n`;f.t.value=f.t.value||'consultoria'}
   form.addEventListener('submit',ev=>{
-    ev.preventDefault();const bad=Object.values(f).filter(el=>!check(el));
+    ev.preventDefault();status.removeAttribute('data-i18n-status');status.removeAttribute('data-i18n-email');
+    const bad=Object.values(f).filter(el=>!check(el));
     if(bad.length){bad[0].focus();status.textContent='';return}
     btn.disabled=true;
     const to='emersontalles2@gmail.com',sub=`[Portfolio] ${f.t.selectedOptions[0].textContent.trim()} — ${f.n.value.trim()}`,
       body=`${f.m.value.trim()}\n\n— ${f.n.value.trim()} <${f.e.value.trim()}>`;
     location.href=`mailto:${to}?subject=${encodeURIComponent(sub)}&body=${encodeURIComponent(body)}`;
-    status.textContent=`${t('Abriendo tu cliente de correo con el mensaje listo. Si no se abre, escribe a')} ${to}`;
+    status.dataset.i18nStatus='Abriendo tu cliente de correo con el mensaje listo. Si no se abre, escribe a';
+    status.dataset.i18nEmail=to;
+    status.textContent=`${t(status.dataset.i18nStatus)} ${to}`;
     setTimeout(()=>{btn.disabled=false},1500);
   });
 }
